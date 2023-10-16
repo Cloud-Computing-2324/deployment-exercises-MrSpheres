@@ -1,0 +1,15 @@
+resources: 
+  limits:
+     cpu: 500m
+     memory: 640Mi
+  requests:
+     cpu: 500m
+     memory: 640Mi
+
+ingress:
+  enabled: true
+  hosts:
+    - host: wiki.35.cc.ucll.cloud
+      paths:
+        - path: "/"
+          pathType: Prefix
