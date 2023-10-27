@@ -1,8 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: wiki
+---
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: wiki
-  namespace: argocd
+  namespace: argo-cd
 spec:
   sources:
   - repoURL: https://charts.js.wiki

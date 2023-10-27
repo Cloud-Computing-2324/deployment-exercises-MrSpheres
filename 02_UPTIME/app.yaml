@@ -1,8 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: uptime
+---
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: uptime
-  namespace: argocd
+  namespace: argo-cd
 spec:
   sources:
   - repoURL: https://helm.irsigler.cloud
